@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import UsersList from './components/users/users_list';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import users from './data/users'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UsersList users={users()} />
   </React.StrictMode>,
   document.getElementById('root')
 );
